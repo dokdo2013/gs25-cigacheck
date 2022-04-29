@@ -4,7 +4,7 @@
 
     // GS SOSA CIGA CHECK Project (GSCC)
     include './phpqrcode.php';
-    $conn = mysqli_connect('localhost', 'dokdo2013', 'hwoo7141', 'sosags');
+    include './dbinfo.php';
     $query = "SELECT * FROM ciga_list WHERE del_stat = 0";
     $result = mysqli_query($conn, $query);
     
